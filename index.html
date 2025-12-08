@@ -4,18 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduAvança</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>EduAvança</h1>
-        <p>Site Eucacional de Educação Infantil</p>
-        <!-- Botão que executa uma função JavaScript -->
-        <button onclick="mudarCorDeFundo()">Mudar Cor de Fundo</button>
-    </div>
-
-
-    
-    <script src="script.js"></script>
+    <header>
+        <nav class="navbar">
+            <div class="logo">EduAvança</div>
+            <ul class="nav-links">
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#login" class="btn">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Aprenda, evolua, avance!</h1>
+                <p>Na EduAvança, você encontra cursos online para dar o próximo melhorar como profissional.</p>
+                <a href="#cursos" class="btn-primary">Ver Cursos</a>
+            </div>
+            <img src="image/WhatsApp Image 2025-12-08 at 12.29.27.jpeg" alt="EduAvança" class="hero-img">
+        </section>
+        <section id="cursos" class="courses">
+            <h2>Nossos Cursos</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <h3>Alfabetização</h3>
+                    <p>Aprenda a alfabetizar as crianças com letramento,leitura e consciência fonológica.</p>
+                    <a href="#" class="btn">Acessar curso</a>
+                </div>
+                <div class="course-card">
+                    <h3>Ludicidade</h3>
+                    <p>Domine a ferramenta de ensinamentos importantes do desenvolvimento, através de jogos, brincadeiras e fantasias.</p>
+                    <a href="#" class="btn">Acessar curso</a>
+                </div>
+                <div class="course-card">
+                    <h3>Educação Exclusiva</h3>
+                    <p>Preparação para atender diversidade,pessoas com problemas especiais, dificuldade de aprendizagem, contribuindo com um lugar acolhedor para todos.</p>
+                    <a href="#" class="btn">Acessar curso</a>
+                </div>
+            </div>
+        </section>
+        <section id="sobre" class="about">
+            <h2>Sobre a EduAvança</h2>
+            <p>
+                Somos apaixonados por ensinar! Nossa missão é democratizar o conhecimento e permitir que qualquer pessoa avance em sua carreira com cursos de qualidade, acessíveis e interativos.
+            </p>
+        </section>
+        <section id="contato" class="contact">
+            <h2>Contato</h2>
+            <form>
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <textarea placeholder="Sua mensagem" required></textarea>
+                <button type="submit" class="btn-primary">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 EduAvança. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
